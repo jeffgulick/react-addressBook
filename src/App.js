@@ -15,7 +15,7 @@ export default class App extends Component{
       .then(response => response.json())
       .then(parsedJSON => parsedJSON.results.map(user =>(
         {
-          name: `${user.name.first}, ${user.name.last}`,
+          name: `${user.name.first} ${user.name.last}`,
           thumbnail: `${user.picture.large}`,
           phone: `${user.phone}, ${user.cell}`,
           email: `${user.email}`,
