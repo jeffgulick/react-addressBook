@@ -18,7 +18,6 @@ const Display = (props) => {
                         <Button variant="primary" onClick={()=>setClicked(clicked=>!clicked)}>More Info</Button>
                     </Card.Body>
                 </Card>
-
             </Container>
         )
     } 
@@ -35,7 +34,6 @@ const Display = (props) => {
                     <Button variant="primary" onClick={()=>setClicked(clicked=>!clicked)}>Less Info</Button>
                 </Card.Body>
             </Card>
-
         )
     }
 }
