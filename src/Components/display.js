@@ -10,8 +10,8 @@ const Display = (props) => {
 
     if(!clicked){
         return(
-            <Container fluid className="p-1">
-                <Card style={{ width: '14rem', backgroundColor:"#D1ECF1" }}>
+            <Container fluid className="p-1" style={{display:"flex"}}>
+                <Card style={{ width: '14rem', backgroundColor:"#D1ECF1"}}>
                     <Card.Img variant="top" src={props.user.thumbnail} />
                     <Card.Body>
                         <Card.Title>{props.user.name}</Card.Title>
