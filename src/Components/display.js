@@ -10,12 +10,12 @@ const Display = (props) => {
 
     if(!clicked){
         return(
-            <Container fluid className="p-1" style={{display:"flex"}}>
+            <Container fluid className="p-2" style={{flex:"15%"}}>
                 <Card style={{ width: '14rem', backgroundColor:"#D1ECF1"}}>
                     <Card.Img variant="top" src={props.user.thumbnail} />
                     <Card.Body>
                         <Card.Title>{props.user.name}</Card.Title>
-                        <Button variant="primary" onClick={()=>setClicked(clicked=>!clicked)}>More Info</Button>
+                        <Button variant="primary" style={{backgroundColor:"#452669"}} onClick={()=>setClicked(clicked=>!clicked)}>More Info</Button>
                     </Card.Body>
                 </Card>
             </Container>

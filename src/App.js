@@ -36,9 +36,9 @@ export default class App extends Component{
 
   render(){
     return(
-      <div>
+      <div style={{display:"flex", flexWrap:"wrap"}}>
         {this.state.contacts.map(user => (
-          <Display 
+          <Display
             key={user.id}
             user = {user} />
         ))}
